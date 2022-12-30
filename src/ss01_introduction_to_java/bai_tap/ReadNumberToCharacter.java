@@ -7,7 +7,7 @@ public class ReadNumberToCharacter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int number;
-        String wordOne, wordTwo , wordThree;
+        String wordOne, wordTwo, wordThree;
 
 
         System.out.println("Enter a number");
@@ -15,80 +15,84 @@ public class ReadNumberToCharacter {
         if (number < 10 && number >= 0) {
             switch (number) {
                 case 0:
-                    System.out.println("Zero");
+                    wordOne = "Zero";
                     break;
                 case 1:
-                    System.out.println("One");
+                    wordOne = "One";
                     break;
                 case 2:
-                    System.out.println("Two");
+                    wordOne = "Two";
                     break;
                 case 3:
-                    System.out.println("Three");
+                    wordOne = "Three";
                     break;
                 case 4:
-                    System.out.println("Four");
+                    wordOne = "Four";
                     break;
                 case 5:
-                    System.out.println("Five");
+                    wordOne = "Five";
                     break;
                 case 6:
-                    System.out.println("Six");
+                    wordOne = "Six";
                     break;
                 case 7:
-                    System.out.println("Seven");
+                    wordOne = "Seven";
                     break;
                 case 8:
-                    System.out.println("Eight");
+                    wordOne = "Eight";
                     break;
                 case 9:
-                    System.out.println("Nine");
+                    wordOne = "Nine";
                     break;
                 case 10:
-                    System.out.println("Ten");
+                    wordOne = "Ten";
                     break;
                 default:
+                    wordOne = "";
                     System.out.println("out of ability");
                     break;
             }
+            System.out.println(wordOne);
         } else if (number < 20) {
             int ones = number % 10;
             switch (ones) {
+                case 0:
+                    wordOne = "Ten";
+                    break;
                 case 1:
-                    System.out.println("Eleven");
+                    wordOne = "Eleven";
                     break;
                 case 2:
-                    System.out.println("Twelve");
+                    wordOne = "Twelve";
                     break;
                 case 3:
-                    System.out.println("Thirteen");
+                    wordOne = "Thirteen";
                     break;
                 case 4:
-                    System.out.println("Fourteen");
+                    wordOne = "Fourteen";
                     break;
                 case 5:
-                    System.out.println("Fifteen");
+                    wordOne = "Fifteen";
                     break;
                 case 6:
-                    System.out.println("Sixteen");
+                    wordOne = "Sixteen";
                     break;
                 case 7:
-                    System.out.println("Seventeen");
+                    wordOne = "Seventeen";
                     break;
                 case 8:
-                    System.out.println("Eighteen");
+                    wordOne = "Eighteen";
                     break;
                 case 9:
-                    System.out.println("Nineteen");
+                    wordOne = "Nineteen";
                     break;
                 default:
-                    System.out.println("out of ability");
-
+                    wordOne = "";
             }
+            System.out.println(wordOne);
         } else if (number <= 99) {
             int ones = number % 10;
             int tens = number / 10;
-
 
             switch (ones) {
                 case 1:
@@ -120,7 +124,6 @@ public class ReadNumberToCharacter {
                     break;
                 default:
                     wordOne = "";
-                    System.out.println("out of ability");
             }
 
             switch (tens) {
@@ -150,7 +153,6 @@ public class ReadNumberToCharacter {
                     break;
                 default:
                     wordTwo = "";
-                    System.out.println("out of ability");
             }
             System.out.printf(wordTwo + " " + wordOne);
         } else if (number > 99 && number < 1000) {
@@ -188,10 +190,12 @@ public class ReadNumberToCharacter {
                     break;
                 default:
                     wordOne = "";
-                    System.out.println("out of ability");
             }
 
             switch (tens) {
+                case 1:
+                    wordTwo = "Ten";
+                    break;
                 case 2:
                     wordTwo = "Twenty";
                     break;
@@ -218,29 +222,28 @@ public class ReadNumberToCharacter {
                     break;
                 default:
                     wordTwo = "";
-                    System.out.println("out of ability");
             }
-            switch (tens) {
+            switch (twos) {
                 case 1:
                     wordThree = "One hundred";
                     break;
                 case 2:
-                    wordThree = "One hundred";
-                    break;
-                case 3:
                     wordThree = "Two hundred";
                     break;
-                case 4:
+                case 3:
                     wordThree = "Three hundred";
                     break;
-                case 5:
+                case 4:
                     wordThree = "Four hundred";
                     break;
-                case 6:
+                case 5:
                     wordThree = "Five hundred";
                     break;
-                case 7:
+                case 6:
                     wordThree = "Six hundred";
+                    break;
+                case 7:
+                    wordThree = "Seven hundred";
                     break;
                 case 8:
                     wordThree = "Eight hundred";
@@ -250,10 +253,10 @@ public class ReadNumberToCharacter {
                     break;
                 default:
                     wordThree = "";
-                    System.out.println("out of ability");
             }
             System.out.printf(wordThree + " and " + wordTwo + " " + wordOne);
         }
     }
 }
+
 
