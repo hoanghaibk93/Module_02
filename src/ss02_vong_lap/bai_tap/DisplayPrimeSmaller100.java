@@ -3,13 +3,13 @@ package ss02_vong_lap.bai_tap;
 public class DisplayPrimeSmaller100 {
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
-            if (IsPrime(i)) {
+            if (isPrime(i)) {
                 System.out.println(i);
             }
         }
     }
 
-    public static boolean IsPrime(int number) {
+    public static boolean isPrime(int number) {
         boolean flag = true;
         if (number < 2) {
             flag = false;

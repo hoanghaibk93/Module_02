@@ -4,7 +4,7 @@ public class DisplayPremierPrime {
     public static void main(String[] args) {
         int count = 0, numberOne = 0;
         while (count < 20) {
-            if (IsPrime(numberOne)) {
+            if (isPrime(numberOne)) {
                 System.out.println(numberOne);
                 count++;
 
@@ -13,7 +13,7 @@ public class DisplayPremierPrime {
         }
     }
 
-    public static boolean IsPrime(int number) {
+    public static boolean isPrime(int number) {
         boolean flag = true;
         if (number < 2) {
             flag = false;
