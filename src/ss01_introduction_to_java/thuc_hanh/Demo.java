@@ -19,15 +19,7 @@ public class Demo {
 //        System.out.println(a);
 //        System.out.println(b);
 //    }
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Input number: ");
-        int number = Integer.parseInt(sc.nextLine());
-        System.out.println(number);
-        System.out.println("Input name: ");
-        String name = sc.nextLine();
-        System.out.println(name);
-        Demo person1 = new Demo();
-        Demo person2 = new Demo();
-        System.out.println(person1 == person2);
+//
+        System.out.println(4>4);
     }
 }
