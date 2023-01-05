@@ -14,9 +14,9 @@ public class MainQuadraticEquation {
         double c = Double.parseDouble(sc.nextLine());
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         if (quadraticEquation.getDiscriminant() > 0) {
-            System.out.println("Equation has two roots x1= " + quadraticEquation.getRoot1() + ", x2=" + quadraticEquation.getRoot2());
-        } else if (quadraticEquation.getDiscriminant() == 0){
-            System.out.println("Equation has one double root x=" + quadraticEquation.getRoot1());
+            System.out.println("Equation has two roots x1 = " + quadraticEquation.getRoot1() + ", x2 =" + quadraticEquation.getRoot2());
+        } else if (quadraticEquation.getDiscriminant() == 0) {
+            System.out.println("Equation has one double root x =" + quadraticEquation.getRoot1());
         } else {
             System.out.println("The equation has no roots");
         }

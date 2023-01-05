@@ -1,7 +1,9 @@
 package ss04_oop_class_object.bai_tap.quadraticequation;
 
 public class QuadraticEquation {
-    double a, b, c, delta;
+    private double a;
+    private double b;
+    private double c;
 
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
