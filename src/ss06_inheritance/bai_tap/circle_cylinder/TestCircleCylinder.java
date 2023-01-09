@@ -7,7 +7,7 @@ public class TestCircleCylinder {
         System.out.println(circle);
         circle.setColor("yellow");
         System.out.println(circle);
-        circle = new Circle(6, "white");
+        circle = new Circle(6.4, "white");
         System.out.println(circle);
         System.out.println(circle.getArea());
 
@@ -15,7 +15,7 @@ public class TestCircleCylinder {
         Cylinder cylinder = new Cylinder();
         cylinder.setHeight(3);
         System.out.println(cylinder);
-        cylinder = new Cylinder(5, "red", 4);
+        cylinder = new Cylinder(5, "red", 4.5);
         cylinder.setColor("blue");
         System.out.println(cylinder);
         cylinder.setRadius(6);

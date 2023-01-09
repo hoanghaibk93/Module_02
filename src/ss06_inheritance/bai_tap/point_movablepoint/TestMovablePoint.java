@@ -4,12 +4,12 @@ public class TestMovablePoint {
     public static void main(String[] args) {
         MovablePoint movablePoint = new MovablePoint();
         System.out.println(movablePoint);
-        movablePoint = new MovablePoint(3,5,6,7);
+        movablePoint = new MovablePoint(3.34f,5.123f,6,7.5f);
         System.out.println(movablePoint);
-        movablePoint.setSpeed(8,9);
+        movablePoint.setSpeed(8.4f,9.6f);
         movablePoint.setX(3);
         System.out.println(movablePoint);
-        movablePoint.setXSpeed(4);
+        movablePoint.setXSpeed(4.0f);
         System.out.println(movablePoint);
         System.out.println(movablePoint.move());
     }
