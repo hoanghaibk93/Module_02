@@ -7,7 +7,7 @@ public class TestCircle {
         circle = new Circle(2.5);
         circle.setFilled(false);
         System.out.println(circle);
-        circle = new Circle(3,"yellow",true);
+        circle = new Circle(3, "yellow", true);
         System.out.println(circle);
         System.out.println("Before resizeable: ");
         System.out.println(circle);
