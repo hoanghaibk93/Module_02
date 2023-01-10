@@ -1,6 +1,6 @@
 package ss07_abstract_interface.Colorable;
 
-public class Rectangle extends Shape implements Colorable {
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -54,10 +54,5 @@ public class Rectangle extends Shape implements Colorable {
                 + getPerimeter()
                 + ", which is a subclass of "
                 + super.toString();
-    }
-
-    @Override
-    public String howToColor() {
-        return "Color all four sides.";
     }
 }
