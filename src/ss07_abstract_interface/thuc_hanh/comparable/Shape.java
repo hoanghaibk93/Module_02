@@ -1,8 +1,8 @@
 package ss07_abstract_interface.thuc_hanh.comparable;
 
-import ss07_abstract_interface.bai_tap.interface_resizeable.Resizeable;
+import ss07_abstract_interface.bai_tap.interface_resizeable.IResizeable;
 
-public class Shape implements Resizeable {
+public class Shape implements IResizeable {
     private String color = "green";
     private boolean filled = true;
 

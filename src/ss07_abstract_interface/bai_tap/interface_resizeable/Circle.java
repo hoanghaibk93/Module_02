@@ -1,6 +1,6 @@
 package ss07_abstract_interface.bai_tap.interface_resizeable;
 
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape implements IResizeable {
     private double radius = 1.0;
 
     public Circle() {

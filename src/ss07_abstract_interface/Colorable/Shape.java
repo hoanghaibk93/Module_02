@@ -1,6 +1,6 @@
 package ss07_abstract_interface.Colorable;
 
-public class Shape {
+public abstract class Shape {
     private String color = "green";
     private boolean filled = true;
 
