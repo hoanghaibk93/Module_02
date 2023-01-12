@@ -24,4 +24,8 @@ public class CalculatorTest {
                 throw new RuntimeException("Unsupported operation");
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println(calculate(26,25,DIVISION));
+    }
 }
