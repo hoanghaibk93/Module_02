@@ -5,12 +5,13 @@ public class MyLinkedListTest {
         MyLinkedList myLinkedList = new MyLinkedList("Hai");
         myLinkedList.addFirst("Hoang");
         myLinkedList.addFirst("Hanh");
-        myLinkedList.add(4, "Huy");
+        myLinkedList.add(2, "Huy");
         myLinkedList.add(0, "Tuan");
         myLinkedList.addFirst("Tung");
         myLinkedList.addFirst("Cong");
         myLinkedList.remote(2);
         myLinkedList.remoteLast();
+        myLinkedList.remoteFirst();
         myLinkedList.printList();
     }
 }

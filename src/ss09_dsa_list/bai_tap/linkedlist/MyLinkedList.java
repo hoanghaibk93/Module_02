@@ -64,7 +64,7 @@ public class MyLinkedList {
 
     public void remoteLast() {
         Node current = head;
-        for (int i = 0; i < numNodes - 2; i++) {
+        for (int i = 0; i < numNodes - 1; i++) {
             current = current.next;
         }
         tail = current;
