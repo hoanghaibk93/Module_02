@@ -1,5 +1,7 @@
 package ss09_dsa_list.bai_tap.linkedlist;
 
+import ss08_clean_code.g;
+
 public class MyLinkedListTest {
     public static void main(String[] args) {
         MyLinkedList myLinkedList = new MyLinkedList("Hai");
