@@ -1,4 +1,4 @@
-package ss10_dsa_stack_queue.thuc_hanh.bai1;
+package ss10_dsa_stack_queue.bai_tap.reverse;
 
 
 import java.util.*;
