@@ -1,7 +1,7 @@
 package ss07_abstract_interface.Colorable;
 
 public class Circle extends Shape {
-    private double radius = 1.0;
+    private double radius ;
 
     public Circle() {
     }

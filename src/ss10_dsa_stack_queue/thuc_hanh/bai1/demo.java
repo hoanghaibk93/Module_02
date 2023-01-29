@@ -1,16 +1,28 @@
 package ss10_dsa_stack_queue.thuc_hanh.bai1;
 
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Stack;
 
 public class demo {
     public static void main(String[] args) {
         Stack<Integer> demo = new Stack<>();
+//        demo.push(1);
+        demo.push(2);
+        demo.push(3);
+        demo.push(4);
         demo.push(1);
         demo.push(2);
         demo.push(3);
         demo.push(4);
+        demo.push(1);
+        demo.push(2);
+        demo.push(3);
+        demo.push(4);
+        System.out.println(demo.isEmpty());
+
 //        while(!demo.empty()){
 //            System.out.print(demo.pop());
 //        }
@@ -24,10 +36,6 @@ public class demo {
             System.out.print(demo2.get(i));
         }
 
-        System.out.println("");
-        System.out.println(demo2.getFirst());
-        System.out.println(demo.pop());
-        //demo.stackOfString();
 
     }
 }

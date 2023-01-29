@@ -43,6 +43,7 @@ public class MyLinkedList {
     public void remoteFirst() {
         Node temp = head;
         head = temp.next;
+        numNodes--;
     }
 
     public void remote(int index) {
@@ -69,6 +70,7 @@ public class MyLinkedList {
         }
         tail = current;
         current.next = null;
+        numNodes--;
     }
 
     public Node get(int index) {

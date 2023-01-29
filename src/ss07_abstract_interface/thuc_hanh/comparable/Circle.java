@@ -1,13 +1,18 @@
 package ss07_abstract_interface.thuc_hanh.comparable;
 
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Comparable<Circle> {
     private double radius = 1.0;
 
     public Circle() {
     }
 
     public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public Circle(String color, boolean filled, double radius) {
+        super(color, filled);
         this.radius = radius;
     }
 
@@ -38,5 +43,10 @@ public class Circle extends Shape {
                 + getRadius()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public int compareTo(Circle o) {
+        return this.getColor().compareTo(o.getColor());
     }
 }

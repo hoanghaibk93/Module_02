@@ -40,4 +40,8 @@ public class Geometric {
         return "created with \"" + color + "\" color and " +
                 (filled == null ? "no fill" : "filled with \"" + filled + "\" color");
     }
+
+//    public void callName() {
+//    }
+
 }

@@ -14,6 +14,7 @@ public class Shape {
         this.filled = filled;
     }
 
+
     public String getColor() {
         return color;
     }

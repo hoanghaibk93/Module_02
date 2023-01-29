@@ -42,4 +42,13 @@ public class Rectangle extends Geometric {
     public double getPerimeter() {
         return 2 * (width + height);
     }
+
+//@Overloading
+    public double getArea(int a, int b) {
+        return a * b;
+    }
+
+    public void callName() {
+        System.out.println("Meo meo");
+    }
 }
