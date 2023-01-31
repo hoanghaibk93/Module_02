@@ -30,7 +30,7 @@ public class ProductServiceImp implements IProductService {
 
     @Override
     public void findProduct(String name) {
-         repository.findProduct(name);
+        repository.findProduct(name);
     }
 
     @Override

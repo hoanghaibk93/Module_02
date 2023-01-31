@@ -33,7 +33,7 @@ public class ProductRepositoryImp implements IProductRepository {
             }
         }
         if (count == 0) {
-            System.out.println("id: " + id + " not available in this product list");
+            System.out.println("product with id:" + id + " not available in this product list");
         }
     }
 
@@ -64,7 +64,7 @@ public class ProductRepositoryImp implements IProductRepository {
             }
         }
         if (count == 0) {
-            System.out.println("product " + name + " has not in this product list");
+            System.out.println("name of product: " + name + " has not in this product list");
         }
     }
 
@@ -76,6 +76,7 @@ public class ProductRepositoryImp implements IProductRepository {
 
     @Override
     public void sortDecreaseProduct() {
+        Collections.sort(arrayListProduct);
         Collections.reverse(arrayListProduct);
     }
 }
