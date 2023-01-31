@@ -1,8 +1,6 @@
 package ss11_javaCollectionsFramework.thuc_hanh.bai1;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.TreeMap;
+import java.util.*;
 
 public class TestMap {
     public static void main(String[] args) {
@@ -23,5 +21,21 @@ public class TestMap {
         linkedHashMap.put("Lewis", 29);
         linkedHashMap.put("Cook", 29);
         System.out.println("\nThe age for " + "Lewis is " + linkedHashMap.get("Lewis"));
+        System.out.println("------------------- set");
+        Set<String> set = new TreeSet<>();
+        set.add("Cong");
+        set.add("Hoang");
+        set.add("An");
+
+        System.out.println(set);
+        Set<Integer> set1 = new LinkedHashSet<>();
+        set1.add(5);
+        set1.add(null);
+        set1.add(3);
+        set1.add(null);
+
+
+
+        System.out.println(set1);
     }
 }

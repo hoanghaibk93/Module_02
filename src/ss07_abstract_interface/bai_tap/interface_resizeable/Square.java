@@ -48,4 +48,5 @@ public class Square extends Shape implements IResizeable {
     public void resize(double percent) {
         side = side * (percent / 100 + 1);
     }
+
 }

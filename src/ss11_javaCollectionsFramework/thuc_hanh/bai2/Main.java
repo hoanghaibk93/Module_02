@@ -42,9 +42,9 @@ public class Main {
             System.out.println(student);
         }
         System.out.println("After sort");
-        //Collections.sort(list);
+        Collections.sort(list);
 
-        Collections.sort(list,new AgeClass());
+        //Collections.sort(list,new AgeClass());
         //Collections.reverse(list);
 
         for (Student student: list){

@@ -3,7 +3,7 @@ package ss10_dsa_stack_queue.thuc_hanh.bai1;
 import java.util.EmptyStackException;
 import java.util.LinkedList;
 
-public class MyGenericStack<T> {
+public class  MyGenericStack<T> {
     private LinkedList<T> stack;
 
     public MyGenericStack() {
