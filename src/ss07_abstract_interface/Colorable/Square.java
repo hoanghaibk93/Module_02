@@ -48,4 +48,5 @@ public class Square extends Shape implements IColorable {
     public void howToColor() {
         System.out.println("Color all four sides.");
     }
+
 }
