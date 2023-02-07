@@ -17,19 +17,22 @@ public class CopyBinaryFile {
             try {
                 throw new Exception();
             } catch (Exception e) {
-                System.out.println("File is already exist");
+                System.out.println("Target file is already exist");
             }
         }
         try {
             read = new FileInputStream(source);
             write = new FileOutputStream(target);
+            int sum = 0;
             int totalByte = read.available();
             byte[] buffer = new byte[totalByte];
             int length;
             while ((length = read.read(buffer)) > 0) {
                 write.write(buffer, 0, length);
+                sum = sum+ length;
             }
-            //write.write(totalByte);
+            System.out.println("Total of byte in file: " + totalByte);
+            System.out.println("Copy file success");
             write.close();
             read.close();
 
