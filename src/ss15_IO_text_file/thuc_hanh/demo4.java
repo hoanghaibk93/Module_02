@@ -9,8 +9,6 @@ public class demo4 {
         try {
             fout = new FileOutputStream("D:\\conhoanfhau.txt");
             fout.write(65);
-            fout.write(66);
-            fout.write(70);
             fout.close();
             System.out.println("success...");
         } catch (Exception e) {
