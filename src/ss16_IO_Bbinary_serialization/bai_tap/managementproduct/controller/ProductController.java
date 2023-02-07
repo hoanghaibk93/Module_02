@@ -7,13 +7,13 @@ import java.io.File;
 import java.util.List;
 import java.util.Scanner;
 
-public class ModelController {
+public class ProductController {
     private static final String PATH_FILE = "D:\\04_hoc_tap\\codegym\\c1122g1\\module_02\\src\\ss16_IO_Bbinary_serialization\\bai_tap\\managementproduct\\repository\\product.dat";
     private static ProductService productService = new ProductService();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        File file = new File(PATH_FILE);
         int select = 0;
         do {
             System.out.println("------Management Product-------");
@@ -22,17 +22,20 @@ public class ModelController {
             System.out.println("3.Search Product by id");
             System.out.println("4.Exit");
             System.out.println("Enter your choice");
-            select = Integer.parseInt(scanner.nextLine());
+            try {
+                select = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e){
+                System.out.println("You enter not number");
+                System.out.println("You enter again");
+            }
             switch (select) {
                 case 1:
-                    File file = new File(PATH_FILE);
                     List<Product> list = productService.displayProduct(file);
                     for (Product product : list) {
                         System.out.println(product);
                     }
                     break;
                 case 2:
-                    File file1 = new File(PATH_FILE);
                     System.out.println("Enter id");
                     int id = Integer.parseInt(scanner.nextLine());
                     System.out.println("Enter name");
@@ -42,13 +45,12 @@ public class ModelController {
                     System.out.println("Enter Price");
                     double price = Double.parseDouble(scanner.nextLine());
                     Product product = new Product(id, name, manufacture, price);
-                    productService.addProduct(file1, product);
+                    productService.addProduct(file, product);
                     break;
                 case 3:
-                    File file2 = new File(PATH_FILE);
                     System.out.println("Enter id that you want find");
                     int idFind = Integer.parseInt(scanner.nextLine());
-                    if (productService.searchProduct(file2, idFind)) {
+                    if (productService.searchProduct(file, idFind)) {
                         System.out.println("This product have in List Product");
                     } else {
                         System.out.println("This product not found");
