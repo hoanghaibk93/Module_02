@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class CheckPhoneNumber {
     private Pattern pattern;
     private Matcher matcher;
-    static final String PHONENUMBER_GEGEX = "^[(][0-9]{2}[)][-][(][0][0-9]{9}[)]$";
+    static final String PHONENUMBER_GEGEX = "^\\([0-9]{2}\\)[-]\\([0][0-9]{9}\\)$";
 
     public boolean checkPhoneNumber(String regex) {
         pattern = Pattern.compile(PHONENUMBER_GEGEX);

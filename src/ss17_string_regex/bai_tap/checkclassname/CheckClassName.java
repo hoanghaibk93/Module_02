@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 public class CheckClassName {
     private static Pattern pattern;
     private Matcher matcher;
-    //private static final String CLASS_REGEX = "^\\d{1,2}[-|/]\\d{1,2}[-|/]\\d{4}$";
     private static final String CLASS_REGEX = "^[CAP]\\d{4}\\w*[GHIKLM]$";
 
     public boolean checkClassName(String regex) {
