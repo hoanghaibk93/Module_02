@@ -3,10 +3,10 @@ package ss16_IO_Bbinary_serialization.bai_tap.managementproduct.model;
 import java.io.Serializable;
 
 public class Product implements Serializable {
-    int id;
-    String name;
-    String manufacture;
-    double price;
+    private int id;
+    private String name;
+    private String manufacture;
+    private double price;
 
     public Product() {
     }

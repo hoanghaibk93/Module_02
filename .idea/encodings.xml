@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/ss16_IO_Bbinary_serialization/bai_tap/copybinaryfile/filetarget.txt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/ss16_IO_Bbinary_serialization/bai_tap/managementproduct/repository/product.dat" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/src/ss16_IO_Bbinary_serialization/thuc_hanh/bai2/objectFile.dat" charset="ISO-8859-1" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
